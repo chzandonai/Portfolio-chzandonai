@@ -20,7 +20,7 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="churn.html" class="active">Generic</a></li>
+						<li><a href="churn.html" class="active">Churn</a></li>
 						<!--
 						<li><a href="elements.html">Elements</a></li>							
 						-->						
@@ -36,9 +36,46 @@
 						<div class="inner">
 							<h1 class="Mi">Análise e Modelagem de <em>Churn</em> de Clientes</h1>
 							<span class="image fit"><img src="https://d1eipm3vz40hy0.cloudfront.net/images/AMER/calculate-customer-churn.jpg" alt="" /></span>
-							<p>.
+							<h2>Descrição do problema</h2>
+							<p>
+								A empresa de serviços de internet enfrenta um problema crescente de rotatividade de clientes, o que tem impactado negativamente em seus lucros. Para evitar a perda de clientes e minimizar as consequências, a empresa está buscando compreender os fatores que influenciam os clientes a desistir ou deixar de utilizar seus serviços, além de antecipar e prever quando um cliente tem alta probabilidade de churn. A empresa acredita que, por meio do conhecimento aprofundado dos clientes e suas necessidades, é possível oferecer soluções personalizadas e aprimorar seus serviços, mantendo a satisfação e fidelização da base de clientes.
 							</p>
+							<h2>Análise e Modelagem dos dados</h2>
+							<p>
+								Para solucionar o problema de negócios, serão executadas as seguintes etapas: identificação dos dados contidos no conjunto fornecido pela empresa, filtragem das linhas e colunas que não contêm informações relacionadas ao problema de negócios, verificação de valores nulos e dados duplicados por meio da limpeza dos dados, análise exploratória de dados (EDA) para encontrar insights e entender como as variáveis afetam a taxa de rotatividade, engenharia de recursos para converter os dados em informações compreensíveis para os modelos de aprendizado de máquina, criação de modelos de aprendizado de máquina para prever a rotatividade, avaliação dos resultados do machine learning e conversão do desempenho dos modelos de aprendizado de máquina em resultados de negócios.
+							</p>
+							<h2>Insights Obtidos</h2>
+							A partir da análise do conjunto de dados fornecido, pode-se concluir que os clientes que deixam de usar os serviços da empresa possuem as seguintes características:
+							<ul>
+								<li>Contrato realizado mensalmente</li>
+								<li>Menos de 10 meses de contrato</li>
+								<li>Conta mensal superior a R$60,00</li>
+							</ul>
+							<h2>Aplicação de modelo de Machine Learning</h2>
+							A lista de algoritmos classificadores de Machine Learning foi testada e aquele que apresentou melhor desempenho foi selecionado para ser utilizado em previsões futuras.
+							<ul>
+								<li>O modelo escolhido foi o Gradient Boost.</li>
+							</ul>
+							<h2>Performance do Modelo de Machine Learning</h2>
+							<table>
+								<tr>
+								  <th>Modelo</th>
+								  <th>F1 Score</th>
+								  <th>RUC_AUC</th>
+								</tr>
+								<tr>
+								  <td>Gradient Boost</td>
+								  <td>0.655</td>
+								  <td>0.779</td>
+								
+							  </table>
+							<h2>Resultados de Negócio</h2>
+							De acordo com os dados coletados, 25% dos clientes da empresa de telefonia deixaram a mesma. Uma análise anterior teria permitido a retenção de 78% desses clientes, totalizando 1457 clientes. Se esses clientes estivessem pagando uma taxa mensal de R$60, a empresa teria obtido uma receita adicional de R$87.400,00 no período.
+							<h2>Notebook da solução do problema</h2>
+							<a href="https://github.com/chzandonai/churn-detection/blob/main/notebooks/deteccao-de-perdas-de-clientes-telefonia.ipynb">Clique Aqui para mais detalhes sobre a solução desse problema.</a>
 						</div>
+						
+
 					</section>
 
 			</div>
