@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="churnEN.html" class="active">Churn</a></li>
+						
+						<li><a href="churn.html">PT-BR</a></li>							
+											
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="Mi">Analysis and Modeling of <em>Customer Churn</em></h1>
+							<span class="image fit"><img src="https://d1eipm3vz40hy0.cloudfront.net/images/AMER/calculate-customer-churn.jpg" alt="" /></span>
+							<h2>Description of the problem</h2>
+							<p>
+							An internet services company faces a growing problem of customer churn, which has negatively impacted its profits. To avoid losing customers and minimize the consequences, the company is seeking to understand the factors that influence customers to give up or stop using its services, in addition to anticipating and predicting when a customer has a high probability of churn. The company believes that, through in-depth knowledge of customers and their needs, it is possible to offer customized solutions and improve their services, maintaining the satisfaction and loyalty of the customer base.
+							</p>
+							<h2>Data Analysis and Modeling</h2>
+							<p>
+							To solve the business problem, the following steps will be performed: identifying the data contained in the set provided by the company, filtering the rows and columns that do not contain information related to the business problem, checking for null values and duplicate data by cleaning the data, exploratory data analysis (EDA) to find insights and understand how variables affect the turnover rate, feature engineering to convert the data into understandable information for machine learning models, creating machine learning models to predict churn, evaluating machine learning results, and converting the performance of machine learning models into business outcomes.
+						</p>
+						<h2>Insights Gained</h2>
+						Based on the analysis of the data set provided, it can be concluded that customers who stop using the company's services have the following characteristics:
+						<ul>
+						<li>Monthly contract</li>
+						<li>Less than 10 months of contract</li>
+						<li>Monthly bill over R$60.00</li>
+						</ul>
+						<h2>Machine Learning model application</h2>
+						The list of Machine Learning classifier algorithms was tested and the one with the best performance was selected to be used in future predictions.
+						<ul>
+						<li>The model chosen was Gradient Boost, by test_split to chose the model and GridSearchCV for tunning.</li>
+						</ul>
+						<h2>Machine Learning Model Performance</h2>
+						<table>
+						<tr>
+						<th>Template</th>
+						<th>F1 Score</th>
+						<th>RUC_AUC</th>
+						</tr>
+						<tr>
+						<td>Gradient Boost</td>
+						<td>0.655</td>
+						<td>0.779</td>
+						
+						</table>
+						<h2>Business Results</h2>
+						According to the data collected, 25% of the telephone company's customers left the company. A previous analysis would have allowed the retention of 78% of these customers, totaling 1457 customers. If these customers had been paying a monthly fee of R$60, the company would have obtained additional revenue of R$87,400.00 in the period.
+						<h2>Problem Solution Notebook</h2>
+						<a href="https://github.com/chzandonai/churn-detection/blob/main/notebooks/deteccao-de-perdas-de-clientes-telefonia.ipynb">Click Here for more details on resolving this issue .</a>
+						</div>
+						
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
